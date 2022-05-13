@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVTODEPT</title>
+    <link href="../style/light-cars.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><img src="../images/логотип чёрными буквами.svg"></li>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="#auto">Автомобили</a></li>
+            <li><a href="#consult">Консультация</a></li>
+        </ul>
+    </nav>
+    <div class="cars">
+        <h1>Модельный ряд</h1>
+        <figure id ="auto">
+            <a href="scania.html"><img src="../images/Все фотки 3 типов автомобилей/Грузовые автомобили/1 Scania R440 грузовой.png"></a>
+            <figcaption>Scania R440</figcaption>
+        </figure>
+        <figure>
+            <a href="volvo.html"><img src="../images/Все фотки 3 типов автомобилей/Грузовые автомобили/2 Volvo FH16 750 грузовой.png"></a>
+            <figcaption>Volvo FH16 750</figcaption>
+        </figure>
+        <figure>
+            <a href="daf.html"><img src="../images/Все фотки 3 типов автомобилей/Грузовые автомобили/3 DAF XF Paccar грузовой.png"></a>
+            <figcaption>DAF XF Paccar</figcaption>
+        </figure>
+    </div>
+        
+    <div id="consult" class="consult">
+        <h1>Консультация по любым вопросам</h1>
+        <hr>
+        <div class="form_content">
+            <img src="../images/Консультация по любым впоросам автосервис.jpg">
+            <form action="mailto:ilyavasilevskiyy@gmail.com" enctype="text/plain">
+                <h2>Заполните форму, и мы<br> Вам перезвоним!</h2>
+                <input type="text" value="Ваше имя" onfocus="if (value == 'Ваше имя') {value = ''}" onblur="if (value == '') {value = 'Ваше имя'}"> <!--Чтобы при наведении пропадало значение value по умолчанию, а если поле не было введено, то ему ставится по умолчанию Ваше имя -->
+                <input type="text" value="Номер телефона" onfocus="if (value == 'Номер телефона') {value = ''}" onblur="if (value == '') {value = 'Номер телефона'}">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+        
+        <div class="location">
+            <div class="text_content">
+                <h1>Где мы находимся?</h1>
+                <h2>Вы можете найти нас по адресу: <br>
+                    г. Минск, ул.ПродажАвтомобилей, <br>
+                    д. 1
+                    </h2>
+            </div>
+            <img src="../images/location.jpg">
+        </div>
+    </div>
+    
+    <footer>
+        <img class="dark_logo" src="../images/логотип.png">
+        <div class="main">
+            <h3>Главная</h3>
+            <h3>Почему мы?</h3>
+            <h3>Остались вопросы</h3>
+            <h3>Контакты</h3>
+        </div>
+        <div class="contacts">
+            <h3>Контакты</h3>
+            <h3>+375 29 924 72 03</h3>
+            <span><img src="../images/location-tiny.svg">г. Минск, ул.ПродажАвтомобилей, д.1</span>
+        </div>
+        <div class="social-media">
+            <span><img src="../images/facebook.svg">ilyavasilevskiyy</span>
+            <span><img src="../images/instagram.svg">ilyavasilevskiyy</span>
+        </div>
+    </footer>
+</body>
+</html>

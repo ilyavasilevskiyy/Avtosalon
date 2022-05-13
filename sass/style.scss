@@ -1,0 +1,391 @@
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter-Regular.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #526bfc38;
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+    li {
+        list-style-type: none;
+        font-family: Inter;
+        font-weight: 300;
+        a:link, a:visited {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.5s;
+        }
+        a:hover {
+            text-shadow: 1px 1px 15px #ff4747bb;
+        }
+    }
+}    
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // .header__image img {
+    //     width: 50vw;
+    //     border-radius: 20px;
+    // }
+    .header__image {
+        width: 50vw;
+        height: 30vw;
+        animation: header-anim 15s linear infinite alternate
+    }
+    .header__text h1 {
+        font-family: Inter;
+        font-weight: 700;
+    }
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4c5;
+.content__news {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        font-family: Inter;
+    }
+    hr {
+        width: 15vw;
+        border: 1px solid grey;
+        background-color: grey;
+        margin-bottom: 40px;
+    }
+    .news1-2, .news3-4 {
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 25vw;
+            margin: 1vw;
+            border-radius: 10px;
+        }
+    }
+}
+}
+
+
+.auto-options {
+    margin: 5vh 0 0 0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        font-family: Inter;
+    }
+    hr {
+        width: 15vw;
+        border: 1px solid grey;
+        background-color: grey;
+        margin-bottom: 40px;
+    }
+    // background-color: #c7cffd23;
+    .cars1-2 {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 30vw;
+        }
+    }
+    .cars3 {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 55vw;
+        }
+    }
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .text-content {
+        h2 {
+            font-size: 3vw;
+            font-family: Inter;
+            font-weight: 500;
+        }
+        h4 {
+            font-family: Inter;
+            font-weight: 100;
+            font-size: 1.5vw;
+            color: rgb(122, 121, 121);
+        }
+    }
+    img {
+        width: 40vw;
+    }
+}
+
+.consult {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        font-family: Inter;
+        font-weight:bold;
+        font-size: 2.5vw;
+    }
+    hr {
+        width: 15vw;
+        border: 1px solid grey;
+        background-color: grey;
+    }
+    .form_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        img {
+            width: 40vw;
+            border-radius: 3vw;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            background: rgba(83, 155, 250, 0.035);
+            border-radius: 3vw;
+            padding: 4vw;
+            h2 {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 2vw;
+                text-align: center;
+            }
+            input[type="text"] {
+                font-family: Inter;
+                padding: 1vw;
+                border-radius: 0.7vw;
+                margin: 0.5vw;
+                background-color: #4763ff17;
+                border: none;
+                color:rgb(122, 121, 121);
+                font-size: 1vw;
+                outline: none;
+                transition: 0.8s;
+                &:hover {
+                    outline: 1px solid #4763ff7a;
+                }
+                &:focus {
+                    outline: 1px solid #4763ff;
+                }
+            }
+            input[type="submit"] {
+                font-family: Inter;
+                padding: 1vw;
+                border-radius: 0.7vw;
+                margin: 2vw 0.5vw;
+                background-color: #4763ff;
+                border: none;
+                color:rgb(252, 252, 252);
+                font-size: 1vw;
+                outline: none;
+                transition: 0.4s;
+                cursor: pointer;
+                &:hover {
+                    background-color: #3654fa;
+                }
+                &:active {
+                    background-color: #0d2ee9;
+                }
+            }
+        }
+    }
+}
+
+
+.location {
+    margin: 10vh -0.45vw 0 -0.45vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F4F4F4;
+    .text_content {
+        h1 {
+            font-family: Inter;
+        }
+        h2 {
+            font-family: Inter;
+            font-weight: 500;
+            color:rgb(122, 121, 121);
+            font-size: 1.25vw;
+        }
+    }
+    img {
+        margin-left: 10vw;
+        width: 40vw;
+        border-radius: 1.5vw;
+        outline: 2px solid #d4d3d3ad;
+        box-shadow: 0 0 15px #57555546;
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    margin: 0 -8px -1vh -8px;
+    padding-bottom: 4vw;
+    justify-content: space-around;
+    align-items: center;
+    span {
+        padding-bottom: 0.7vw;
+    }
+    h3, span {
+        font-family: Inter;
+        font-weight: 100;
+        font-size: 1vw;
+    }
+    .dark_logo {
+        width: 20vw;
+    }
+    img {
+        width: 1.5vw;
+    }
+    span {
+        img {
+            margin: 0 3px -5px 0;
+        }
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 560px) {
+    nav {
+        margin: -5px;
+        li {
+            font-size: 3vw;
+            padding: 0;
+        img {
+            width: 40vw;
+            margin: -2vh 0 0 -12vw;
+        }
+    }
+    }
+    .header {
+        margin: 0;
+        h1 {
+            font-size: 6vw;
+        }
+    }
+    .content {
+        margin: 10vh -7px 0 -7px;
+        h1 {
+            font-size: 4vw;
+        }
+    }
+    .auto-options {
+        h1 {
+            font-size: 4vw;
+        }
+    }
+    .partners {
+        margin: 5vh 0 0 0;
+    }
+    .consult {
+        margin-top: 5vh;
+    }
+}
+@media (min-width: 560px) {
+    nav {
+        margin: -20px -8px 0 -8px;
+        padding: 0;
+        li {
+            font-size: 1.25vw;
+        img {
+            width: 20vw;
+            margin: 0 0 0 -5vw;
+        }
+    }
+}
+.header {
+    margin: 15vh 0 0 0;
+    h1 {
+        font-size: 4vw;
+    }
+}
+.content {
+    margin: 20vh -7px 0 -7px;
+    h1 {
+        font-size: 2vw;
+    }
+}
+.auto-options {
+    h1 {
+        font-size: 2vw;
+    }
+}
+.partners {
+    margin: 10vh 0 0 0;
+}
+.consult {
+    margin: 20vh 0 0 0;
+    hr {
+        margin-bottom: 10vh;
+    }
+    h2 {
+        margin-bottom: 5vh;
+    }
+}
+}
+
+@keyframes header-anim {
+    from {
+        background-image: url(../images/автосалон.jpg);
+        background-size: 100%;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    25% {
+        background-image: url(../images/автосалон-2.jpg);
+        background-size: 100%;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background-image: url(../images/автосалон-3.jpg);
+        background-size: 100%;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    75% {
+        background-image: url(../images/автосалон-4.jpg);
+        background-size: 100%;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    to {
+        background-image: url(../images/автосалон-5.jpg);
+        background-size: 100%;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+}
