@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVTODEPT</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><img src="images/логотип чёрными буквами.svg"></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#auto">Автомобили</a></li>
+            <li><a href="#partners">Наши партнёры</a></li>
+            <li><a href="#consult">Консультация</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <div class="header__text">
+            <h1>Добро<br>пожаловать<br>на AVTO DEPT</h1>
+        </div>
+        <div class="header__image">
+            
+        </div>
+    </div>
+    
+    <div class="content">
+        <div id="news" class="content__news">
+            <h1>Дневные новости</h1>
+            <hr>
+            <div class="news1-2">
+                <a href="https://auto.onliner.by"><img src="images/новости-1.jpg"></a>
+                <a href="https://auto.onliner.by"><img src="images/новости-2.jpg"></a>
+            </div>
+            <div class="news3-4">
+                <a href="https://auto.onliner.by"><img src="images/новости-3.jpg"></a>
+                <a href="https://auto.onliner.by"><img src="images/новости-4.jpg"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="auto" class="auto-options">
+        <h1>Выбор автомобилей</h1>
+        <hr>
+        <div class="cars1-2">
+            <a href="light-cars/light-cars.html"><img src="images/легковые авто.jpg"></a>
+            <a href="pickup-cars/pickup-cars.html"><img src="images/малотоннажные автомобили-2.png.jpg"></a>
+        </div>
+        <div class="cars3">
+            <a href="heavy-cars/heavy-cars.html"><img src="images/грузовые авто.jpg"></a>
+        </div>
+    </div>
+
+    <div id="partners" class="partners">
+        <div class="text-content">
+            <h2>С какими<br> производителями авто<br> мы сотрудничаем? </h2>
+            <h4>И это далеко не весь список компаний!</h4>
+        </div>
+        <img src="images/бренды.jpg">
+    </div>
+    
+    <div id="consult" class="consult">
+        <h1>Консультация по любым вопросам</h1>
+        <hr>
+        <div class="form_content">
+            <img src="images/Консультация по любым впоросам автосервис.jpg">
+            <form action="mailto:ilyavasilevskiyy@mail.ru">
+                <h2>Заполните форму, и мы<br> Вам перезвоним!</h2>
+                <input type="text" value="Ваше имя" onfocus="if (value == 'Ваше имя') {value = ''}" onblur="if (value == '') {value = 'Ваше имя'}"> <!--Чтобы при наведении пропадало значение value по умолчанию, а если поле не было введено, то ему ставится по умолчанию Ваше имя -->
+                <input type="text" value="Номер телефона" onfocus="if (value == 'Номер телефона') {value = ''}" onblur="if (value == '') {value = 'Номер телефона'}">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+        
+        <div class="location">
+            <div class="text_content">
+                <h1>Где мы находимся?</h1>
+                <h2>Вы можете найти нас по адресу: <br>
+                    г. Минск, ул.ПродажАвтомобилей, <br>
+                    д. 1
+                    </h2>
+            </div>
+            <img src="images/location.jpg">
+        </div>
+    </div>
+    
+    <footer>
+        <img class="dark_logo" src="images/логотип.png">
+       
+        <div class="contacts">
+            <h3>Контакты</h3>
+            <h3>+375 29 924 72 03</h3>
+            <span><img src="images/location-tiny.svg">г. Минск, ул.ПродажАвтомобилей, д.1</span>
+        </div>
+        <div class="social-media">
+            <span><img src="images/facebook.svg">ilyavasilevskiyy</span>
+            <span><img src="images/instagram.svg">ilyavasilevskiyy</span>
+        </div>
+    </footer>
+</body>
+</html>
